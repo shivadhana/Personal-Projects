@@ -1,0 +1,27 @@
+# To Find Height 
+x = int(input('Let us see if you are tall enough to ride the rollacoaster. What is your height in inches? '))
+if x >= 50:
+# To Find Age and Determine Ticket Price
+  y = int(input('What is your age? '))
+  if y < 12:
+    print('Yay! You are tall enough to ride. Youth Tickets are $5')
+    Ticket = 5
+  elif y < 19:
+    print('Yay! You are tall enough to ride. Teen Tickets are $7')
+    Ticket = 7
+  elif 45 <= y <= 55:
+    print('Yay! You are tall enough to ride. Senior Tickets are FREE. ')
+    Ticket = 0
+  else: 
+    print('Yay! You are tall enough to ride. Adult Tickets are $12')
+    Ticket = 12
+# To Upsell Photoshoot on the ride
+  photo = input('Do you want photos? Type: y/n ')
+  if photo == 'y':
+    print(f'Your total is ${Ticket + 3} ')
+  else: 
+    print(f'Your total is ${Ticket} ')
+else: 
+  print(f"Sorry, you need to grow {50-x} more inch(es)")
+if Ticket == 0:
+  print('Enjoy the complimentary rides on us! Have a great day. ')

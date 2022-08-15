@@ -1,0 +1,27 @@
+import random 
+
+my_choice = input('What is your choice? (Choose: Rock, Paper, or Scissors) ').lower()
+
+# a = 1 = rock, b = 2 = paper, c = 3 = sissors
+game = ['rock', 'paper', 'scissors']
+
+computer_choice = random.choice(game)
+print(f'Computers choice: {computer_choice} ')
+
+if my_choice == computer_choice:
+    print(f"Both players selected {my_choice}. It's a tie!")
+elif my_choice == "rock":
+    if computer_choice == "scissors":
+        print("Rock smashes scissors! You win!")
+    else:
+        print("Paper covers rock! You lose.")
+elif my_choice == "paper":
+    if computer_choice == "rock":
+        print("Paper covers rock! You win!")
+    else:
+        print("Scissors cuts paper! You lose.")
+elif my_choice == "scissors":
+    if computer_choice == "paper":
+        print("Scissors cuts paper! You win!")
+    else:
+        print("Rock smashes scissors! You lose.")
