@@ -1,0 +1,40 @@
+from turtle import Turtle, Screen
+timmy = Turtle()
+
+# Prints the Object's Postition 
+print(timmy)
+
+# Change Dot to Turtle
+timmy.shape("turtle")
+
+# Color the Turtle
+timmy.color("DarkRed")
+
+# Move the Turtle
+timmy.forward(100)
+
+my_screen = Screen()
+
+#Displays Canvas Height 
+print(f'Canvas Height: {my_screen.canvheight}')
+
+# Exit on Click of Window
+my_screen.exitonclick()
+
+
+
+-------------------------------------
+
+
+
+from prettytable import PrettyTable
+table = PrettyTable()
+
+# Adding Columns to the Table
+table.add_column("Pokemon Name", ["Pikachu", "Squirtal", "Charmander"])
+table.add_column("Type", ["Electric", "Water", "Fire"])
+
+# Align the Table to either, l, r, or c (default is center (c))
+table.align = "l"
+
+print(table)
